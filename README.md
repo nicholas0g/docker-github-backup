@@ -47,7 +47,11 @@ And run
 Detail
 =====
 
-You need to provide your github username using the variable USER or the github Organization you want to backup using the variable ORG. If both variable are used the container will only save the repository of the organizaion. You alwais need to provide a valid github token using the variable TOKEN. By default the container will perform a backup operation every 12hs. To set this time in a different way you just need to set the variable WAIT in seconds.
+You need to provide your github username using the variable USER or the github Organization you want to backup using the variable ORG.
+If both variable are used the container will only save the repository of the organizaion. 
+You alwais need to provide a valid github token using the variable TOKEN. 
+
+By default the container will perform a backup operation every 12hs. To set this time in a different way you just need to set the variable WAIT in seconds.
 
 Get you github token
 ==============
