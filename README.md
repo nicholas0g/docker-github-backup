@@ -24,7 +24,7 @@ Run the container to backup organization repos every 12hs
 
 Run the container to backup organization repos every 24hs
 
-    docker run -e ORG=github_org -e TOKEN=github_token -e WAIT=86400 -v where_to_save:/app/repositories --name=github-backup nicholas0g/github-backup
+    docker run -e ORG=github_org -e TOKEN=github_token -e WAIT=24 -v where_to_save:/app/repositories --name=github-backup nicholas0g/github-backup
 
 Use Docker compose
 
@@ -47,7 +47,7 @@ And run
 Detail
 =====
 
-You need to provide your github username using the variable USER or the github Organization you want to backup using the variable ORG. If both variable are used the container will only save the repository of the organizaion. You alwais need to provide a valid github token using the variable TOKEN. By default the container will perform a backup operation every 12hs. To set this time in a different way you just need to set the variable WAIT in seconds.
+You need to provide your github username using the variable USER or the github Organization you want to backup using the variable ORG. If both variable are used the container will only save the repository of the organizaion. You alwais need to provide a valid github token using the variable TOKEN. By default the container will perform a backup operation every 12hs. To set this time in a different way you just need to set the variable WAIT in hours.
 
 Get you github token
 ==============
