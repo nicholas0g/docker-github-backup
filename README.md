@@ -30,15 +30,15 @@ Use Docker compose
 
     version: "3"
     services:
-    github-backup:
+      github-backup:
         image: nicholas0g/github-backup
         environment:
-        ORG: ${ORG}
-        TOKEN: ${TOKEN}
-        USER: ${USER}
-        WAIT: ${WAIT}
+          ORG: ${ORG}
+          TOKEN: ${TOKEN}
+          USER: ${USER}
+          WAIT: ${WAIT}
         volumes:
-        - ./backup:/app/repositories
+          - ./backup:/app/repositories
 
 And run
     
